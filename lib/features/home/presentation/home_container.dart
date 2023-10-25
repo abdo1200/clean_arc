@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:clean_arc/features/home/bloc/home_cubit.dart';
+import 'package:clean_arc/features/home/presentation/home_page/bloc/home_cubit.dart';
 import 'package:clean_arc/src/app/bloc/app_bloc.dart';
 import 'package:clean_arc/src/core/navigation/routes/AppRouter.gr.dart';
 import 'package:clean_arc/src/core/widget/dialogs/call_dialog.dart';

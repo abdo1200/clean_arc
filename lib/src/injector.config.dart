@@ -9,8 +9,10 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:clean_arc/features/auth/bloc/sign_cubit.dart' as _i6;
-import 'package:clean_arc/features/home/bloc/home_cubit.dart' as _i4;
+import 'package:clean_arc/features/auth/presentation/bloc/sign_cubit.dart'
+    as _i6;
+import 'package:clean_arc/features/home/presentation/home_page/bloc/home_cubit.dart'
+    as _i4;
 import 'package:clean_arc/src/app/bloc/app_bloc.dart' as _i10;
 import 'package:clean_arc/src/core/navigation/routes/AppRouter.dart' as _i3;
 import 'package:clean_arc/src/core/network/access_token_interceptor.dart'

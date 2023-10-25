@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:clean_arc/features/auth/bloc/sign_cubit.dart';
+import 'package:clean_arc/features/auth/presentation/bloc/sign_cubit.dart';
 import 'package:clean_arc/resource/styles/app_colors.dart';
 import 'package:clean_arc/src/core/navigation/routes/AppRouter.gr.dart';
 import 'package:clean_arc/src/core/widget/loading/full_over_loading.dart';

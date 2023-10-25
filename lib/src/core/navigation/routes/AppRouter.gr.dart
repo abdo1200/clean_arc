@@ -9,14 +9,19 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i9;
-import 'package:clean_arc/features/auth/auth_container.dart' as _i6;
-import 'package:clean_arc/features/auth/pages/otp.dart' as _i8;
-import 'package:clean_arc/features/auth/pages/sign.dart' as _i7;
-import 'package:clean_arc/features/home/home_container.dart' as _i1;
-import 'package:clean_arc/features/home/pages/chats.dart' as _i4;
-import 'package:clean_arc/features/home/pages/home_page.dart' as _i3;
-import 'package:clean_arc/features/home/pages/notification.dart' as _i2;
-import 'package:clean_arc/features/home/pages/settings.dart' as _i5;
+import 'package:clean_arc/features/auth/presentation/auth_container.dart'
+    as _i6;
+import 'package:clean_arc/features/auth/presentation/pages/otp.dart' as _i8;
+import 'package:clean_arc/features/auth/presentation/pages/sign.dart' as _i7;
+import 'package:clean_arc/features/home/presentation/home_container.dart'
+    as _i1;
+import 'package:clean_arc/features/home/presentation/home_page/home_page.dart'
+    as _i2;
+import 'package:clean_arc/features/home/presentation/pages/chats.dart' as _i4;
+import 'package:clean_arc/features/home/presentation/pages/notification.dart'
+    as _i3;
+import 'package:clean_arc/features/home/presentation/pages/settings.dart'
+    as _i5;
 import 'package:flutter/material.dart' as _i10;
 
 abstract class $AppRouter extends _i9.RootStackRouter {
@@ -30,16 +35,16 @@ abstract class $AppRouter extends _i9.RootStackRouter {
         child: const _i1.HomeContainer(),
       );
     },
-    NotificationRoute.name: (routeData) {
-      return _i9.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const _i2.NotificationPage(),
-      );
-    },
     HomeRoute.name: (routeData) {
       return _i9.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i3.HomePage(),
+        child: const _i2.HomePage(),
+      );
+    },
+    NotificationRoute.name: (routeData) {
+      return _i9.AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const _i3.NotificationPage(),
       );
     },
     ChatsRoute.name: (routeData) {
@@ -97,21 +102,7 @@ class HomeContainer extends _i9.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i2.NotificationPage]
-class NotificationRoute extends _i9.PageRouteInfo<void> {
-  const NotificationRoute({List<_i9.PageRouteInfo>? children})
-      : super(
-          NotificationRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'NotificationRoute';
-
-  static const _i9.PageInfo<void> page = _i9.PageInfo<void>(name);
-}
-
-/// generated route for
-/// [_i3.HomePage]
+/// [_i2.HomePage]
 class HomeRoute extends _i9.PageRouteInfo<void> {
   const HomeRoute({List<_i9.PageRouteInfo>? children})
       : super(
@@ -120,6 +111,20 @@ class HomeRoute extends _i9.PageRouteInfo<void> {
         );
 
   static const String name = 'HomeRoute';
+
+  static const _i9.PageInfo<void> page = _i9.PageInfo<void>(name);
+}
+
+/// generated route for
+/// [_i3.NotificationPage]
+class NotificationRoute extends _i9.PageRouteInfo<void> {
+  const NotificationRoute({List<_i9.PageRouteInfo>? children})
+      : super(
+          NotificationRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'NotificationRoute';
 
   static const _i9.PageInfo<void> page = _i9.PageInfo<void>(name);
 }

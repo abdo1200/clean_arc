@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:clean_arc/features/auth/bloc/sign_cubit.dart';
+import 'package:clean_arc/features/auth/presentation/bloc/sign_cubit.dart';
 import 'package:clean_arc/src/app/bloc/app_bloc.dart';
 import 'package:clean_arc/src/core/widget/dialogs/call_dialog.dart';
 import 'package:clean_arc/src/injector.dart';

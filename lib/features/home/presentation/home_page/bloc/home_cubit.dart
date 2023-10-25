@@ -10,9 +10,9 @@ class HomeCubit extends Cubit<HomeState> {
 
   bool useAgree = false;
 
-  void toOtp() {
-    emit(OtpStep());
-  }
+  // void toOtp() {
+  //   emit(OtpStep());
+  // }
 
   void toLogin() {
     emit(HomeInitial());
